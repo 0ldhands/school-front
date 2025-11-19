@@ -1,0 +1,52 @@
+.fee-collection {
+  width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.fee-collection h2 {
+  text-align: center;
+}
+
+.fee-collection .form-group {
+  margin-bottom: 15px;
+}
+
+.fee-collection label {
+  display: block;
+  font-weight: bold;
+}
+
+.fee-collection input[type="text"],
+.fee-collection input[type="date"],
+.fee-collection input[type="number"] {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.fee-collection table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+.fee-collection th,
+.fee-collection td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+.fee-collection th {
+  background-color: #f4f4f4;
+}
+
+.fee-collection .form-group input[readonly] {
+  background-color: #f9f9f9;
+}

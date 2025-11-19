@@ -1,0 +1,32 @@
+import { useState } from 'react';
+
+// material-ui
+import Grid from '@mui/material/Grid';
+import Typography from '@mui/material/Typography';
+import Box from '@mui/material/Box';
+
+// project import
+import MainCard from 'components/MainCard';
+import IncomeAreaChart from './IncomeAreaChart';
+
+// ==============================|| DEFAULT - UNIQUE VISITOR ||============================== //
+
+export default function UniqueVisitorCard() {
+  const [slot, setSlot] = useState('week');
+
+  return (
+    <>
+      <Grid container alignItems="center" justifyContent="space-between">
+        <Grid item>
+          <Typography variant="h3">Students Details:</Typography>
+        </Grid>
+        <Grid item>{/* Add any additional controls here if needed */}</Grid>
+      </Grid>
+      <MainCard content={false} sx={{ mt: 1.5 }}>
+        <Box sx={{ pt: 1, pr: 2 }}>
+          <IncomeAreaChart slot={slot} />
+        </Box>
+      </MainCard>
+    </>
+  );
+}

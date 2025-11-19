@@ -1,0 +1,116 @@
+.invoice {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+  .invoice-container {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .invoice-header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 10px;
+  }
+  
+  .school-logo img {
+    height: 100px;
+    width: auto;
+  }
+  
+  .school-details {
+    text-align: center;
+    flex: 1;
+    margin: 0 20px;
+  }
+  
+  .receipt-details {
+    text-align: right;
+    margin-right: 20px;
+  }
+  
+  .invoice-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .invoice-table th,
+  .invoice-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .invoice-table th {
+    background: #4CAF50;
+    color: #fff;
+  }
+  
+  .invoice-summary {
+    margin-top: 20px;
+  }
+  
+  .summary-details p {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  
+  footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #888;
+  }
+  
+  .print-button {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .print-button button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .print-button button:hover {
+    background-color: #45a049;
+  }
+  
+  @media print {
+    body * {
+      visibility: hidden;
+    }
+    .invoice-container,
+    .invoice-container * {
+      visibility: visible;
+      
+    }
+    tr{
+      color: black;
+    }
+    .invoice-table th{
+      color: black;
+    }
+    .invoice-container {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+    }
+    .print-button {
+      display: none;
+    }
+  }
+  

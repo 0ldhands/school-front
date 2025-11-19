@@ -1,0 +1,38 @@
+/* chart-container {
+    width: 100%;
+    max-width: 500px;
+    height: 300px;
+    margin: auto;
+  }
+  
+  @media (min-width: 768px) {
+    .chart-container {
+      height: 400px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .chart-container {
+      height: 500px;
+    }
+  } */
+
+  .chart-container {
+    position: relative;
+    width: 20%;
+    margin: auto;
+  }
+  
+  .chart-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 30vh;
+    z-index: -1; /* Ensure the image is behind the chart */
+    opacity: 0.1; /* Adjust opacity to your preference */
+    background-size: cover;
+    border-radius: 5px;
+    background-position: center;
+  }
+  
