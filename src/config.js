@@ -3,7 +3,7 @@
 const config = {
   // apiURL: `https://backend.dreampublicschoolorg.online`,
   // apiURL: `https://backend.asgglobalcrm.in`,
-  apiURL:`http://localhost:2001`,
+  apiURL:`https://school-back-walj.onrender.com`,
 
 
   defaultPath: '/dashboard/default',
